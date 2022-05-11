@@ -1,5 +1,6 @@
 <template>
   <div>
+    <billboard/>
     <blog-list :posts="posts" :more="true" />
     <main-sections :events="events" />
     <main-footer />

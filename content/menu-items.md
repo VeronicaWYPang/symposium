@@ -1,18 +1,13 @@
 ---
 items:
-  - title: Community
-    path: /community
+  - title: About
+    path: /about
     
-  - title: Blog
-    path: /blog
     
-  - title: Join
-    path: /join
-     
-  - title: Meetups
-    path: /meetups
+# - title: Join
+#    path: /join
 
-  - title: Core Team
-    path: /core-team
+  - title: Speakers
+    path: /speakers
 ---
 

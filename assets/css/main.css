@@ -1,3 +1,7 @@
+:root{
+    --primary: #F1A944;
+}
+
 /* DaisyUI variations */
 .btn {
   border-radius: 0;
