@@ -1,0 +1,20 @@
+@import '@fontsource/fira-mono';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NPROGRESS MODIFICATIONS */
+#nprogress .bar {
+    background: #FB0 !important;
+    /*height: 10px !important;*/
+}
+
+#nprogress .peg {
+    box-shadow: none !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: #FB0;
+    border-left-color: #FB0;
+}

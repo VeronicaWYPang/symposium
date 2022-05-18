@@ -1,32 +1,40 @@
-# The Netherlands eScience Center Conference - Symposium
+# create-svelte
 
-Designed and developed by @ctwhome
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/92956d3a-b930-4233-b8e9-82e37b0ac3f0/deploy-status)](https://app.netlify.com/sites/nlesc/deploys)
+## Creating a project
 
-## Editing Content, Events, and Blogs
-
-*   Most of the content on the website can be changed from the markdown files located inside the `content` folder.
-*   The menu links in the header and the mobile side panel can be edited inside the `menu-items.md`
-*   To add events copy the template (https://github.com/nlesc/symposium/blob/main/content/202X-MM-DD-meetup.TEMPLATE.md), change its content, and place it inside the `/content/events/<temaplte.md>` location.
-*   When creating new blog posts, any markdown file located inside `/content/posts/<lowercase-post.md>` will be picked up automatically.
-*   IMPORTANT: all file names need to be "lowercase" in order to make [them work in Netlify](https://answers.netlify.com/t/support-guide-netlify-app-builds-locally-but-fails-on-deploy-case-sensitivity/10754). Example: `2019-07-09-nl-rse-2019.md`
-*   Any modifications in the files will trigger a GitHub action to build and deploy automatically to the live website. The changes will be live after a few minutes.
-
-## Build Setup Locally
+If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-# install dependencies
-$ yarn install
+# create a new project in the current directory
+npm init svelte@next
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# generate static project
-$ yarn generate
-
-# generate and local test
-$ yarn generate && yarn start
+# create a new project in my-app
+npm init svelte@next my-app
 ```
 
-For a detailed explanation of how things work, check out the [documentation](https://nuxtjs.org).
+> Note: the `@next` is temporary
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Home",
+    "url": "/"
+  },
+  {
+    "name": "Following",
+    "url": "/panel"
+  },
+  {
+    "name": "Slack UI",
+    "url": "/slack"
+  },
+  {
+    "name": "Alternate UI",
+    "url": "/alternate"
+  },
+  {
+    "name": "Blog",
+    "url": "/blog"
+  }
+]
