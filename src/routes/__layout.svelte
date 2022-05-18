@@ -1,13 +1,10 @@
 <script lang="ts">
   import Logo from '$lib/Logo.svelte'
   import SocialIcons from "$lib/SocialIcons.svelte"
-
-  import "../app.css"
-  // import MenuItems from '$content/menu-items.json'
   import AppFooter from "$lib/AppFooter.svelte";
+  import "../app.css"
 
   const [{metadata}] = Object.values(import.meta.globEager("$content/menu-items.md"))
-  console.log('🎹 metadata',metadata );
 </script>
 
 <main class="flex flex-col w-screen h-screen bg-base-200">
