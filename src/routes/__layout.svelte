@@ -3,8 +3,11 @@
   import SocialIcons from "$lib/SocialIcons.svelte"
 
   import "../app.css"
-  import MenuItems from '$lib/menu-items.json'
+  // import MenuItems from '$content/menu-items.json'
   import AppFooter from "$lib/AppFooter.svelte";
+
+  const [{metadata}] = Object.values(import.meta.globEager("$content/menu-items.md"))
+  console.log('🎹 metadata',metadata );
 </script>
 
 <main class="flex flex-col w-screen h-screen bg-base-200">
@@ -16,7 +19,7 @@
       <div class="bg-primary">
         <div class="px-3 py-6 flex justify-between items-center  h-[80px] container mx-auto ">
 
-          <div class=" sm:hidden">
+          <div class="sm:hidden">
             <!-- Open Menu icon-->
             <label for="my-drawer-3" class="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current text-white">
@@ -30,7 +33,7 @@
             <Logo/>
             <ul class="menu menu-horizontal">
               <!-- Navbar menu content here -->
-              {#each MenuItems as menu}
+              {#each metadata.menu as menu}
                 <li>
                   <a class="text-lg font-bold text-white hover:text-white" href={menu.url}>
                     {menu.name}
@@ -43,8 +46,8 @@
         </div>
       </div>
       <!-- Page content here -->
-      <div class="container h-full mx-auto flex-1  px-3 pt-3">
-        <slot class=""/>
+      <div class="flex-1">
+        <slot />
       </div>
       <AppFooter/>
 
@@ -59,9 +62,8 @@
         <!-- Sidebar content here -->
         <ul>
 
-          {#each MenuItems as menu}
+          {#each metadata.menu as menu}
             <li>
-
               <a class="text-lg text-white hover:text-white"
                  href={menu.url}
                  on:click={() => {document.getElementById('my-drawer-3').click()}}

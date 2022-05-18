@@ -1,18 +1,29 @@
 import path from 'path';
 import { mdsvex } from 'mdsvex';
-import mdsvexConfig from './mdsvex.config.js';
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 import svg from '@poppanator/sveltekit-svg'
 
 /** @type {import('@sveltejs/kit').Config} */
-const config = {
-  extensions: ['.svelte', ...mdsvexConfig.extensions],
+export default {
+  extensions: [".svelte", ".svelte.md", ".md"],
 
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: [preprocess(), mdsvex(mdsvexConfig)],
+  preprocess: [
+    preprocess(),
+    mdsvex({
+      extensions: [".svelte.md", ".md"],
+      // rehypePlugins: rehypePlugins,
+      layout: {
+        _: "src/routes/_markdown.svelte",
+      },
+    }),
+    preprocess({
+      postcss: true,
+    }),
+  ],
 
   kit: {
     adapter: adapter(),
@@ -25,7 +36,6 @@ const config = {
       plugins: [
         svg({})
       ],
-
       resolve: {
         alias: {
           // these are the aliases and paths to them
@@ -33,10 +43,14 @@ const config = {
           '$lib': path.resolve('./src/lib'),
           '$components': path.resolve('./src/lib/components'),
           '$assets': path.resolve('./src/assets'),
+          '$content': path.resolve('./src/content'),
         }
-      }
+      },
+      // optimizeDeps: {
+      //   include: ["fuzzy"],
+      // },
     }
   }
 };
 
-export default config;
+

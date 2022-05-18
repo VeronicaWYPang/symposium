@@ -1,12 +1,14 @@
 <script lang="ts">
-  // export let organizations
+  import Billboard from "$lib/Billboard.svelte";
+  import Agenda from "$lib/Agenda.svelte";
 </script>
 
 <svelte:head>
   <title>NLESC Conference'22</title>
 </svelte:head>
 
-<div class="flex p-5 pt-0 bg-base-200 h-full">
-  <div class="max-w-screen-xl mx-auto">
-  </div>
+<div class="container mx-auto relative">
+  <Billboard/>
 </div>
+
+<Agenda/>
