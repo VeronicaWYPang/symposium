@@ -1,5 +1,6 @@
 <script>
   import SpeakersIntroduction from "$content/speakers.md";
+
   export const [{ metadata }] = Object.values(import.meta.globEager("$content/speakers.md"))
 </script>
 
@@ -25,11 +26,9 @@
   </section>
 
   <div id="secretariat" class="p-4 mb-20">
-    <a href="/core-team#secretariat">
-      <h2 class="text-2xl font-bold mt-10">
-        Host
-      </h2>
-    </a>
+    <h2 class="text-2xl font-bold mt-10">
+      Host
+    </h2>
     <p class="mb-10">
       Host description
     </p>
