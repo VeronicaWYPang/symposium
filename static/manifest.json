@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "IdeasDiamond",
-  "short_name": "IdeasDiamond",
-  "description": "Billion eyes see more than two!",
+  "name": "NLESC",
+  "short_name": "NLESC",
+  "description": "The Netherlands eScience Center",
   "icons": [
     {
       "src": "/icon-192x192.png",
