@@ -64,7 +64,6 @@
         </div>
         <!-- Sidebar content here -->
         <ul>
-
           {#each metadata.menu as menu}
             <li>
               <a class="text-lg text-white hover:text-white"
@@ -79,10 +78,7 @@
         <div class="mt-6">
           <SocialIcons/>
         </div>
-
-
       </ul>
-
     </div>
   </div>
 
