@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Billboard from "$lib/Billboard.svelte";
+  import Billboard from "../lib/components/Billboard.svelte";
   import Agenda from "$lib/Agenda.svelte";
 </script>
 
@@ -7,7 +7,7 @@
   <title>NLESC Conference'22</title>
 </svelte:head>
 
-<div class="container mx-auto relative">
+<div class="container mx-auto">
   <Billboard/>
 </div>
 

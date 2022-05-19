@@ -1,6 +1,5 @@
 <script>
   import SpeakersIntroduction from "$content/speakers.md";
-
   export const [{ metadata }] = Object.values(import.meta.globEager("$content/speakers.md"))
 </script>
 
@@ -10,7 +9,6 @@
   </div>
 
   <section class="container mx-auto flex flex-wrap pb-10">
-
     {#each metadata.members as member}
       <div class="p-4 w-full sm:w-1/2 lg:w-1/3">
         <div class="flex flex-col h-full p-4 items-center rounded shadow bg-white">

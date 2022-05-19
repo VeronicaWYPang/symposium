@@ -13,8 +13,8 @@
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle"/>
     <div class="drawer-content flex flex-col ">
       <!-- Navbar -->
-      <div class="bg-primary">
-        <div class="px-3 py-6 flex justify-between items-center  h-[80px] container mx-auto ">
+      <div class="bg-primary lg:sticky lg:top-0 z-10">
+        <div class="px-3 py-6 flex justify-between items-center h-[80px] container mx-auto ">
 
           <div class="sm:hidden">
             <!-- Open Menu icon-->
@@ -28,7 +28,7 @@
 
           <div class="hidden w-full sm:flex justify-between items-center">
             <Logo/>
-            <ul class="menu menu-horizontal">
+            <ul class="menu menu-horizontal gap-3">
               <!-- Navbar menu content here -->
               {#each metadata.menu as menu}
                 <li>
@@ -49,6 +49,7 @@
       <AppFooter/>
 
     </div>
+<!--    Drawer side-->
     <div class="drawer-side ">
       <label for="my-drawer-3" class="drawer-overlay"></label>
       <!-- Sidebar content here -->
@@ -73,6 +74,7 @@
         <div class="mt-6">
           <SocialIcons/>
         </div>
+
 
       </ul>
 
