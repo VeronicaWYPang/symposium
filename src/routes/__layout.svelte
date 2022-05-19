@@ -1,10 +1,15 @@
 <script lang="ts">
+  import { afterNavigate } from "$app/navigation";
   import Logo from '$lib/Logo.svelte'
   import SocialIcons from "$lib/SocialIcons.svelte"
   import AppFooter from "$lib/AppFooter.svelte";
   import "../app.css"
 
   const [{metadata}] = Object.values(import.meta.globEager("$content/menu-items.md"))
+
+  afterNavigate(() => {
+    document.getElementById("main").scrollTop = 0;
+  });
 </script>
 
 <main class="flex flex-col w-screen h-screen bg-base-200">
