@@ -12,7 +12,7 @@
     {#each metadata.members as member}
       <div class="p-4 w-full sm:w-1/2 lg:w-1/3">
         <div class="flex flex-col h-full p-4 items-center rounded shadow bg-white">
-          <img width="200" height="200" class="rounded-full object-cover w-30 h-30" src={member.image}>
+          <img width="200" height="200" class="rounded-full object-cover w-30 h-30" alt={member.name} src={member.image}>
           <div class="w-full lg:pl-6 p-4">
             <h4 class="mb-2 text-2xl font-bold font-heading">
               { member.name }
@@ -36,7 +36,7 @@
 
     <div class="p-4 w-full sm:w-1/2 lg:w-1/3">
       <div class="flex flex-col h-full p-4 items-center rounded shadow bg-white">
-        <img width="200" height="200" class="rounded-full object-cover w-30" src={metadata.host.image}>
+        <img width="200" height="200" class="rounded-full object-cover w-30" alt={metadata.host.name} src={metadata.host.image}>
         <div class="w-full lg:pl-6 p-4">
           <h4 class="mb-2 text-2xl font-bold font-heading">
             { metadata.host.name }

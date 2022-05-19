@@ -20,6 +20,7 @@
       <!-- Map -->
       <div>
         <iframe
+            title="Google Maps location - Hermitage in Amsterdam"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9745.127681617034!2d4.9023951!3d52.3653079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x225cd97f1e125444!2sHermitage%20Amsterdam!5e0!3m2!1sen!2snl!4v1652883750011!5m2!1sen!2snl"
             width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
