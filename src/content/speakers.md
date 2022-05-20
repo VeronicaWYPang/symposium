@@ -1,7 +1,4 @@
 ---
-# Description text at the beginning 
-description: Our speakers will....
-
 # List of members
 members:
   - name: Name van First
@@ -42,4 +39,4 @@ host:
 
 ## Speakers
 
-Introduction
+Here is my paragraph with all the information about the speakers.
