@@ -4,7 +4,7 @@ description: Our speakers will....
 
 # List of members
 members:
-  - name: Name van Last
+  - name: Name van First
     image: https://picsum.photos/id/1/200.webp
     desc: Name van Last works as a software developer in the Science Data Centre project....
 
@@ -34,8 +34,8 @@ members:
 
 
 host:
-    name: Host de Last
-    image: https://picsum.photos/id/80/200.webp
+    name: Veronica
+    image: https://www.esciencecenter.nl/wp-content/uploads/2021/07/Pang-Veronica--300x300.png
     desc: Host de Last is a ...
 
 ---
