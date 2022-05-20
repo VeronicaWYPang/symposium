@@ -7,6 +7,10 @@ venue_description: Description here as long as you want Lorem ipsum dolor sit am
 # Agenda
 
 day1:
+  - speaker: Jos van Roost
+    title: Exists
+    image: https://picsum.photos/id/1/200.webp
+    time: 12:30
   - speaker: Name van Last
     title: Workshop title
     image: https://picsum.photos/id/1/200.webp
