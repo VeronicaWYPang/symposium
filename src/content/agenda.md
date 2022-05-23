@@ -2,8 +2,7 @@
 
 # Description text at the beginning
 
-venue_description: Description here as long as you want Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id  est laborum.
-
+venue_description: This international workshop aims to set the future agenda for national and international funders to support sustainable research software. Our guests will have the opportunity to influence the discussion at this early stage, and on the international level, to draw due attention to our shared belief in sustainable research software. 
 # Agenda
 
 day1:
